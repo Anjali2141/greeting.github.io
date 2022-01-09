@@ -31,6 +31,10 @@
             
             let greets;
             
+            if(name==" "){
+            name = " " ;
+                }
+            
             if(hour>=5 && hour<12){
             greets = "Good Morning" ;
         }
@@ -44,7 +48,7 @@
                 greets = "Good Night" ;
         }
 
-        document.getElementById("greeting").innerHTML = greets +"\t" + name;
+        document.getElementById("greeting").innerHTML = name +"\t" + greets;
         
     }, 1000);
         </script>
