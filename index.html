@@ -40,9 +40,9 @@
         else if(hour>=17 && hour<21){
             greets = "Good Evening" ;
         }
-            else{
+        else if(hour>=21 && hour<5){
                 greets = "Good Night" ;
-            }
+        }
 
         document.getElementById("greeting").innerHTML = greets +"\t" + name;
         
